@@ -22,7 +22,7 @@ void Horse::advance(){
 }
 
 void Horse::printLane(){
-  for (int pos = 0; pos <= trackLength; pos++){
+  for (int pos = 0; pos < trackLength; pos++){
     if (position == pos){
       std::cout << index;
     }

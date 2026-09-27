@@ -4,6 +4,12 @@ horseRace: horse.o main.o
 horse.o: horse.h horse.cpp
 	g++ -g -c horse.cpp
 
+race.o: race.h race.cpp horse.h
+	g++ -g -c race.cpp
+
+main.o: race.h main.cpp horse.h
+	g++ -g -c main.cpp
+
 clean:
 	rm horseRace
 	rm *.o

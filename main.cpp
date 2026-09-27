@@ -1,18 +1,15 @@
 #include <iostream>
 #include "horse.h"
-
-void testHorse();
+#include <ctime>
+#include "race.h"
 
 int main(){
-  std::cout << "Hi." << std::endl;
-  testHorse();
+  srand(time(NULL));
+
+  Race race;
+  race.start();
 
   return 0;
 }
-
-void testHorse(){
-  Horse h;
-  h.printLane();
-} // end testHorse
 
 
